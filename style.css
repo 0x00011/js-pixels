@@ -1,0 +1,66 @@
+* {
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+#warning {
+	opacity: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 101%;
+	height: 101%;
+	background: rgb(6, 6, 6);
+	color: #fff;
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: opacity 2s ease-in-out;
+}
+
+#warning h2 {
+	margin: 10px;
+	font-size: 5.5rem;
+	font-weight: 100;
+	color: yellow;
+}
+
+#warning p {
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-weight: 600;
+	display: block;
+	animation: blinker 1s linear infinite;
+}
+
+#time {
+	color: yellow;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.row {
+	/* align rows side by side */
+	display: flex;
+	
+}
+
+.px {
+	width: 15px;
+	height: 15px;
+	background-color: red;
+}
